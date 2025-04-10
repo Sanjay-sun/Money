@@ -140,6 +140,28 @@ body.dark-mode {
     margin: 10px auto;
   }
 }
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00e676, #00bcd4);
+  color: #111;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 230, 118, 0.3);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 230, 118, 0.4);
+  background: linear-gradient(135deg, #00bcd4, #00e676);
+  text-shadow: 0 0 5px #fff, 0 0 10px #00e676, 0 0 20px #00e676;
+  color: #000;
+}
+
 .btn.clicked {
   transform: scale(0.95);
   box-shadow: 0 0 15px #00e676;
