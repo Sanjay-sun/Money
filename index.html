@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Sanjay Sonar] | Portfolio</title>
+  <title>Sanjay Sonar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body><button id="theme-toggle">🌙 Toggle Theme</button>
+<body>
+  <button id="theme-toggle">🌙 Toggle Theme</button>
 
   <!-- 🔥 Hero Section -->
   <header class="hero">
-    <h1>Hey, I'm <span class="highlight">[Sanjay Sonar]</span></h1>
+    <h1>Hey, I'm <span class="highlight">Sanjay Sonar</span></h1>
     <p>Aspiring Web Developer & Creative Thinker</p>
     <a href="#projects" class="btn">See My Work</a>
     <a href="file:///C:/Users/suzay/Downloads/My%20resume.pdf" class="btn" download>📄 Download My Resume</a>
@@ -38,70 +39,73 @@
         <p>A responsive gallery using HTML, CSS and lightbox.</p>
         <a href="#">Coming Soon</a>
       </div>
-      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- 🛠️ Services Section -->
+  <section id="services" class="section">
+    <h2>🛠️ Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Modern, responsive websites using HTML, CSS, JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <h3>Frontend Development</h3>
+        <p>Custom UIs with animations and interactivity.</p>
+      </div>
+      <div class="service-card">
+        <h3>Blog Writing</h3>
+        <p>Tech articles, tutorials, and personal thoughts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📝 Blog Section -->
+  <section id="blog" class="section">
+    <h2>📝 Blog</h2>
+
+    <div class="blog-post">
+      <h3>🚀 Building My First JavaScript App: A To-Do List</h3>
+      <p>
+        I created a basic to-do app using HTML, CSS, and JavaScript to track daily tasks. It was my first hands-on experience with DOM manipulation and localStorage.
+      </p>
+      <p>
+        Features include adding tasks, saving them even after refresh, and marking them done with a click.
+      </p>
+      <a href="#">Read More (coming soon)</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>Learning Web Dev from Scratch</h3>
+      <p>My journey into frontend development and what tools I recommend.</p>
+      <a href="#">Read More →</a>
     </div>
   </section>
 
   <!-- 📬 Contact Section -->
   <section id="contact" class="section">
     <h2>Get In Touch</h2>
-    <p>Email me: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Email me: <a href="mailto:sonarsanj@email.com">sonarsanj@email.com</a></p>
+    <form action="https://formsubmit.co/sonarsanj@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
-<form action="https://formsubmit.co/sonarsanj@email.com" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit" class="btn">Send Message</button>
-</form>
 
+  <!-- Footer -->
   <footer>
-    <p>© [Your Name] 2025</p>
+    <p>© Sanjay Sonar 2025</p>
   </footer>
-<script>
-  const toggleBtn = document.getElementById("theme-toggle");
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
-</script>
 
+  <!-- 🔄 Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
-<section id="services" class="section">
-  <h2>🛠️ Services</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>Web Design</h3>
-      <p>Modern, responsive websites using HTML, CSS, JavaScript.</p>
-    </div>
-    <div class="service-card">
-      <h3>Frontend Development</h3>
-      <p>Custom UIs with animations and interactivity.</p>
-    </div>
-    <div class="service-card">
-      <h3>Blog Writing</h3>
-      <p>Tech articles, tutorials, and personal thoughts.</p>
-    </div>
-  </div>
-</section>
-<section id="blog" class="section">
-  <h2>📝 Blog</h2>
-
-  <div class="blog-post">
-  <h3>🚀 Building My First JavaScript App: A To-Do List</h3>
-  <p>
-    I created a basic to-do app using HTML, CSS, and JavaScript to track daily tasks. It was my first hands-on experience with DOM manipulation and localStorage. It helped me understand how web apps actually work!
-  </p>
-  <p>
-    Features include adding tasks, saving them even after refresh, and marking them done with a click. This project pushed me to learn problem-solving and debugging through the browser console.
-  </p>
-  <a href="#">Read More (coming soon)</a>
-</div>
-
-  </div>
-
-  <div class="blog-post">
-    <h3>Learning Web Dev from Scratch</h3>
-    <p>My journey into frontend development and what tools I recommend.</p>
-    <a href="#">Read More →</a>
-  </div>
-</section>
