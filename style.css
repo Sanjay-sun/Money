@@ -140,3 +140,8 @@ body.dark-mode {
     margin: 10px auto;
   }
 }
+.btn.clicked {
+  transform: scale(0.95);
+  box-shadow: 0 0 15px #00e676;
+}
+
