@@ -6,7 +6,7 @@
   <title>[Sanjay Sonar] | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body><button id="theme-toggle">🌙 Toggle Theme</button>
 
   <!-- 🔥 Hero Section -->
   <header class="hero">
@@ -57,6 +57,12 @@
   <footer>
     <p>© [Your Name] 2025</p>
   </footer>
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
 
 </body>
 </html>
