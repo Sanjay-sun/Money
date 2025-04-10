@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Sanjay Sonar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="theme-toggle">🌙</button>
+  
+  <header class="hero">
+    <h1>About <span class="highlight">Me</span></h1>
+    <p>Who I am and what I love to do</p>
+  </header>
 
-  <h1>About Me</h1>
-  <p>This is the about page. Here's a little info about me!</p>
+  <section class="section">
+    <h2>Hello! I'm Sanjay 👋</h2>
+    <p>
+      I'm a front-end web developer passionate about design and functionality. From simple single-page apps to more complex interactive websites, I focus on building user-friendly experiences.
+    </p>
+    <p>
+      I enjoy working with JavaScript, CSS, and modern UI practices to make websites come alive. I'm also continuously learning and love to blog about what I learn to help others on their journey too.
+    </p>
+  </section>
 
-  <a href="index.html">Back to Home</a>
+  <section class="section">
+    <h2>Tools & Technologies</h2>
+    <div class="grid">
+      <div class="card">HTML5 & CSS3</div>
+      <div class="card">JavaScript ES6+</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">VS Code</div>
+      <div class="card">UI/UX Basics</div>
+    </div>
+  </section>
 
+  <section class="section">
+    <h2>My Mission</h2>
+    <p>
+      To build visually stunning and highly accessible websites that create impact and deliver real value. Every line of code I write is with purpose, passion, and a desire to grow.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sanjay Sonar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
-
