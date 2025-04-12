@@ -105,3 +105,19 @@ document.addEventListener('mousemove', e => {
   document.body.appendChild(trail);
   setTimeout(() => trail.remove(), 300);
 });
+const buttonClickSound = new Audio('click.mp3');
+const keyPressSound = new Audio('key.mp3');
+
+// Play sound on button click
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    buttonClickSound.currentTime = 0;
+    buttonClickSound.play();
+  });
+});
+
+// Play sound on typing
+document.addEventListener('keydown', (e) => {
+  keyPressSound.currentTime = 0;
+  keyPressSound.play();
+});
