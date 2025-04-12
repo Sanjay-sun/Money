@@ -121,3 +121,27 @@ document.addEventListener('keydown', (e) => {
   keyPressSound.currentTime = 0;
   keyPressSound.play();
 });
+document.addEventListener('click', e => {
+  for (let i = 0; i < 20; i++) {
+    const particle = document.createElement('span');
+    particle.className = 'particle';
+    particle.style.left = `${e.pageX}px`;
+    particle.style.top = `${e.pageY}px`;
+    particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    document.body.appendChild(particle);
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = Math.random() * 80;
+    particle.style.setProperty('--x', Math.cos(angle) * distance + 'px');
+    particle.style.setProperty('--y', Math.sin(angle) * distance + 'px');
+    setTimeout(() => particle.remove(), 800);
+  }
+});
+for (let i = 0; i < 25; i++) {
+  const firefly = document.createElement('div');
+  firefly.classList.add('firefly');
+  document.body.appendChild(firefly);
+}
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  document.body.style.backgroundPositionY = `${scrolled * 0.5}px`;
+});
