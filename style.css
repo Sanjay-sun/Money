@@ -259,3 +259,51 @@ body.dark-mode {
     opacity: 0.4;
   }
 }
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #00c853;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: explode 0.8s ease-out forwards;
+}
+@keyframes explode {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+.firefly {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #ffee58;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fly 20s infinite ease-in-out;
+}
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(
+      calc(100vw * (random() - 0.5)),
+      calc(100vh * (random() - 0.5))
+    );
+  }
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1606925797301-84df58a9d234?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
