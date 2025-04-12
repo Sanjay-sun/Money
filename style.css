@@ -215,3 +215,8 @@ body.dark-mode {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+.hero {
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
