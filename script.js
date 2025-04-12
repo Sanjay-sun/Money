@@ -97,3 +97,11 @@ function drawStars() {
   requestAnimationFrame(drawStars);
 }
 drawStars();
+document.addEventListener('mousemove', e => {
+  const trail = document.createElement('span');
+  trail.className = 'trail';
+  trail.style.left = `${e.pageX}px`;
+  trail.style.top = `${e.pageY}px`;
+  document.body.appendChild(trail);
+  setTimeout(() => trail.remove(), 300);
+});
